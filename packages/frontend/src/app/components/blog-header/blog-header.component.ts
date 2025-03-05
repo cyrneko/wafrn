@@ -24,6 +24,7 @@ import { AskDialogContentComponent } from '../ask-dialog-content/ask-dialog-cont
 import { EnvironmentService } from 'src/app/services/environment.service'
 import { InfoCardComponent } from '../info-card/info-card.component'
 import { faBluesky } from '@fortawesome/free-brands-svg-icons'
+import { TranslateModule } from '@ngx-translate/core'
 
 
 @Component({
@@ -35,7 +36,8 @@ import { faBluesky } from '@fortawesome/free-brands-svg-icons'
     MatMenuModule,
     MatButtonModule,
     RouterModule,
-    InfoCardComponent
+    InfoCardComponent,
+    TranslateModule
   ],
   templateUrl: './blog-header.component.html',
   styleUrl: './blog-header.component.scss'

@@ -18,7 +18,8 @@
                 : unfollowUser(blogDetails.id)
             "
           >
-            {{ postService.followedUserIds.indexOf(blogDetails.id) === -1 ? 'Follow' : 'Unfollow' }}
+          	<!-- TODO TRANSLATE -->
+            {{ postService.followedUserIds.indexOf(blogDetails.id) === -1 ? 'blog-header.followButton' : 'blog-header.unfollowButton' }}
           </button>
           <button
             mat-stroked-button
@@ -27,7 +28,7 @@
             class="split-button-left"
             (click)="unfollowUser(blogDetails.id)"
           >
-            Awaiting approval
+            {{ 'blog-header.awaitingApproval' | translate }}
           </button>
           <button
             aria-label="More options"
